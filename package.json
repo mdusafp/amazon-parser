@@ -13,15 +13,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.5",
     "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
     "needle": "^2.4.0",
-    "tress": "^1.1.4"
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
   }
 }
