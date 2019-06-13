@@ -1,8 +1,27 @@
-info: Start 2019-06-10 02:30:01 +03:00
-info: End 2019-06-10 02:31:01 +03:00
-info: Total time: 60011
-info: Total products: 180
-info: Start 2019-06-10 02:37:13 +03:00
-info: End 2019-06-10 02:39:17 +03:00
-info: Time spent: 124s
-info: Products parsed: 183
+info: [34mScript started at 2019-06-14 01:31:31 +03:00[39m
+error: [31m{[39m
+[31m  "message": "Request failed with status code 503",[39m
+[31m  "name": "Error",[39m
+[31m  "stack": "Error: Request failed with status code 503\n    at createError (/Users/user/Pets/bachelor/amazon-parser/node_modules/axios/lib/core/createError.js:16:15)\n    at settle (/Users/user/Pets/bachelor/amazon-parser/node_modules/axios/lib/core/settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (/Users/user/Pets/bachelor/amazon-parser/node_modules/axios/lib/adapters/http.js:237:11)\n    at IncomingMessage.emit (events.js:205:15)\n    at endReadableNT (_stream_readable.js:1154:12)\n    at processTicksAndRejections (internal/process/task_queues.js:84:9)",[39m
+[31m  "config": {[39m
+[31m    "url": "https://amazon.com/Betron-Headphones-Definition-Smartphones-Microphone/dp/B00XBZY0EI/ref=sr_1_167?keywords=headphones&qid=1560465222&s=gateway&sr=8-167",[39m
+[31m    "method": "get",[39m
+[31m    "headers": {[39m
+[31m      "Accept": "application/json, text/plain, */*",[39m
+[31m      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15",[39m
+[31m      "cookie": "csm-hit=tb:s-W0C4FWB7XMX4ESHPT4KY|1560464740013&t:1560464740196&adb:adblk_no; session-id=141-7717327-3094719; session-id-time=2082787201l; skin=noskin; ubid-main=130-3824118-6470961; session-token=UXg0V9HcQMOWBvL963P/prBpd7g34/dCQ2uv26nQjr6cSDHQIshM4C4/BCRzmYoQyywBDL1c8RBEob7S8/2WSD3hcbfawyJCGSTYI/qZDx/fV6hgXggAzPJ4QJzWZVAAWxWJxDny0ULdr1PjZwyUo/Cv1OWQl6zHL6pIrmVPuZP8uNjEH9jMHx1TUSf/ilFmivqBUD8YU7Ss+XdgixyTrGfsbByzwQ5U5MeZjYaUyU+ISZfRP0bDZB/4ItFLrnjxH5k+++2+fA0=; x-wl-uid=1F+xasJPUbh0WH4GhgTWc7Mg2Y97KaTHdej8LFGNTI1FdcOxlsS6kzi+9ELnvAxsBPOtmLKreXL8=; i18n-prefs=USD; sp-cdn=\"L5Z9:RU\"; aws-account-alias=bekitzur; aws-userInfo=%7B%22arn%22%3A%22arn%3Aaws%3Aiam%3A%3A469810709223%3Auser%2Fvmalyutin%22%2C%22alias%22%3A%22bekitzur%22%2C%22username%22%3A%22vmalyutin%22%2C%22keybase%22%3A%22%22%2C%22issuer%22%3A%22http%3A%2F%2Fsignin.aws.amazon.com%2Fsignin%22%7D; aws-target-visitor-id=1540480531969-55095.26_32; aws-target-data=%7B%22support%22%3A%221%22%7D; aws-target-static-id=1540480531967-983541; regStatus=registered; aws-ubid-main=585-8462847-7632323"[39m
+[31m    },[39m
+[31m    "baseURL": "https://amazon.com",[39m
+[31m    "transformRequest": [[39m
+[31m      null[39m
+[31m    ],[39m
+[31m    "timeout": 0,[39m
+[31m    "xsrfCookieName": "XSRF-TOKEN",[39m
+[31m    "xsrfHeaderName": "X-XSRF-TOKEN",[39m
+[31m    "maxContentLength": -1[39m
+[31m  }[39m
+[31m}[39m
+info: [34mScript ended at 2019-06-14 01:33:44 +03:00[39m
+info: [34mTotal time: 0:2:13[39m
+info: [34mproducts length: 0[39m
+info: Script started at 2019-06-14 01:37:39 +03:00
