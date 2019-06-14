@@ -15,13 +15,12 @@ const ReviewSchema = new Schema({
 });
 
 const ProductSchema = new Schema({
+  url: String,
   rate: Number,
   topic: String,
   title: String,
   price: String,
-  author: AuthorSchema,
   reviews: [ReviewSchema],
-  features: [String],
 });
 
 mongoose.model('Author', AuthorSchema);
