@@ -8,7 +8,7 @@ import logger from './logger';
 
 const options = {
   search: 'headphones',
-  launch: { headless: false },
+  launch: { headless: true },
   maxPage: 20,
   transform: body => cheerio.load(body),
   setViewport: { width: 1240, height: 680 },
@@ -120,16 +120,16 @@ async function parseReviews(product, page) {
   }));
 }
 
-async function crawl() {
+async function crawl(text) {
   const browser = await puppeteer.launch(options.launch);
   const page = await browser.newPage();
   await page.setViewport(options.setViewport);
 
-  await search(page, options.search);
+  await search(page, text);
   const totalPages = await getTotalPages(page);
 
   const parsedProducts = await totalPages.times(
-    index => parseProducts(options.search, page, index + 1),
+    index => parseProducts(text, page, index + 1),
   );
 
   const products = lodash.flatMap(parsedProducts);
