@@ -73,6 +73,7 @@ async function parseProducts(topic, page, index) {
   const PRODUCT_TITLE_SELECTOR = 'h2 span.a-color-base.a-text-normal';
   const PRODUCT_RATE_SELECTOR = '.a-icon.a-icon-star-small.a-star-small-4-5.aok-align-bottom';
   const PRODUCT_PRICE_SELECTOR = '.a-price > .a-offscreen';
+  const PRODUCT_AUTHOR_SELECTOR = '#bylineInfo';
 
   const url = getSearchUrl(topic, index);
   await page.goto(url, { waitUntil: ['domcontentloaded'] });
@@ -86,6 +87,10 @@ async function parseProducts(topic, page, index) {
     rate: parseFloat($(product).find(PRODUCT_RATE_SELECTOR).text()),
     price: $(product).find(PRODUCT_PRICE_SELECTOR).first().text(),
     title: $(product).find(PRODUCT_TITLE_SELECTOR).text().trim(),
+    author: {
+      url: $(product).find(PRODUCT_AUTHOR_SELECTOR).attr('href'),
+      name: $(product).find(PRODUCT_AUTHOR_SELECTOR).text().trim(),
+    },
   }));
 }
 
@@ -97,6 +102,7 @@ async function parseReviews(product, page) {
   const REVIEW_HELPFUL_SELECTOR = '[data-hook=helpful-vote-statement]';
   const REVIEW_RATE_SELECTOR = '[data-hook=review-star-rating]';
   const REVIEW_AVP_BADGE = '[data-hook=avp-badge]';
+  const REVIEW_AUTHOR_SELECTOR = '.a-profile';
   const SEE_ALL_REVIEWS_SELECTOR = '[data-hook=see-all-reviews-link-foot]';
 
   const url = getReviewsUrl(product.url);
@@ -116,6 +122,10 @@ async function parseReviews(product, page) {
     date: $(review).find(REVIEW_DATE_SELECTOR).text(),
     body: $(review).find(REVIEW_BODY_SELECTOR).text().trim(),
     title: $(review).find(REVIEW_TITLE_SELECTOR).text().trim(),
+    author: {
+      url: $(review).find(REVIEW_AUTHOR_SELECTOR).attr('href'),
+      name: $(review).find(REVIEW_AUTHOR_SELECTOR).text().trim(),
+    },
     helpful: parseInt($(review).find(REVIEW_HELPFUL_SELECTOR).text(), 10) || 0,
   }));
 }

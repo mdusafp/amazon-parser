@@ -11,6 +11,7 @@ const ReviewSchema = new Schema({
   date: String,
   body: String,
   title: String,
+  author: AuthorSchema,
   helpful: Number,
 });
 
@@ -20,6 +21,7 @@ const ProductSchema = new Schema({
   topic: String,
   title: String,
   price: String,
+  author: AuthorSchema,
   reviews: [ReviewSchema],
 });
 
