@@ -27,7 +27,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "mongodb": "^3.2.7",
-    "mongoose": "^5.5.14",
+    "mongoose": "^5.7.5",
     "puppeteer": "^1.17.0",
     "query-string": "^6.7.0",
     "winston": "^3.2.1"
